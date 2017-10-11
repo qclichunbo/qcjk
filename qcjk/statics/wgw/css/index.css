@@ -1,0 +1,362 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, "微软雅黑";
+    color: #ffffff;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+h1,
+p,
+h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+em {
+    font-style: normal;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    border: none;
+    vertical-align: top;
+}
+
+a,
+input {
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+textarea {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    overflow: auto;
+}
+
+
+/* */
+
+.page {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.page section {
+    padding: 0 4%;
+}
+
+.page .top {
+    height: 9.6%;
+    background: #292b37;
+    overflow: hidden;
+}
+
+.page .top .wrap {
+    height: 69%;
+    display: flex;
+    overflow: hidden;
+}
+
+.page .top .wrap img {
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.page .top .wrap .top_back {
+    display: table;
+    width: 8.5%;
+    height: 100%;
+}
+
+.page .top .wrap .top_back a {
+    display: table-cell;
+    font-size: 3rem;
+    vertical-align: middle;
+    color: #fff;
+    background: url("../img/jt.png") no-repeat left center;
+}
+
+.page .top .wrap .top_title {
+    width: 83%;
+    height: 100%;
+    text-align: center;
+    display: table;
+}
+
+.page .top .wrap .top_title h1 {
+    display: table-cell;
+    font-size: 3.6rem;
+    vertical-align: middle;
+}
+
+.page .top .wrap .top_more {
+    width: 8.5%;
+    height: 100%;
+    display: table;
+}
+
+.page .top .wrap .top_more a {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.page .top .wrap .top_more a ul {
+    display: table;
+}
+
+.page .top .wrap .top_more a ul li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    float: left;
+    list-style: none;
+}
+
+.page .top .wrap .top_more a ul .space {
+    width: 12px;
+    background-color: transparent;
+}
+
+.page .btn {
+    height: 11.6%;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+}
+
+.page .btn > div {
+    height: 65%;
+    width: 35.8%;
+    box-sizing: border-box;
+    border: 1px solid #ea5042;
+    border-radius: 10px;
+    display: inline-table;
+}
+
+.page .btn .btn-left {
+    margin-right: 25%;
+}
+
+.page .btn p {
+    font-size: 2rem;
+    line-height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #ea5042;
+    border-radius: 10px;
+}
+
+.page .btn .on {
+    background: #3279fe;
+    border: 1px solid #3279fe;
+    border-radius: 10px;
+}
+
+.page .btn .on p {
+    color: #fff;
+}
+
+.page .content {
+    padding: 3% 4% 0;
+}
+
+
+/*
+.page .content .ruler {
+    padding-bottom: 6.6%;
+    margin-bottom: 15%;
+}
+*/
+
+.page .content .ruler .ruler-top {
+    display: flex;
+}
+
+.page .content .ruler .ruler-top .blue-ruler {
+    width: 20px;
+    margin-top: 80px;
+    background: url("../img/blue.jpg") no-repeat center 30%;
+}
+
+.page .content .ruler .ruler-top .scale {
+    height: 233px;
+    width: 56px;
+    border: 1px solid #ccc;
+    position: relative;
+    overflow: hidden;
+}
+
+.page .content .ruler .ruler-top .scale li {
+    width: 8px;
+    height: 1px;
+    margin-bottom: 10px;
+    background: #3a3a3a;
+    position: relative;
+}
+
+.page .content .ruler .ruler-top .scale li i {
+    font-size: 14px;
+    color: #333;
+    position: absolute;
+    left: 28px;
+    top: -6px;
+}
+
+.page .content .ruler .ruler-top .scale .long {
+    width: 15px;
+    background: #333;
+}
+
+.page .content .ruler .ruler-top .scale .on {
+    background: #3279fe;
+}
+
+.page .content .ruler .ruler-top .sex {
+    display: none;
+}
+
+.page .content .ruler .ruler-top .on {
+    display: block;
+    width: 158px;
+}
+
+.page .content .ruler .ruler-bot {
+    padding-left: 23%;
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.page .content .ruler .ruler-bot .scale {
+    width: 55px;
+    height: 235px;
+    border: 1px solid #ccc;
+    position: absolute;
+    right: 43px;
+    top: 136px;
+    overflow: hidden;
+    transform: rotate(-90deg) translate(235px, -100%);
+    -ms-transform: rotate(-90deg) translate(235px, -100%);
+    /* IE 9 */
+    -moz-transform: rotate(-90deg) translate(235px, -100%);
+    /* Firefox */
+    -webkit-transform: rotate(-90deg) translate(235px, -100%);
+    /* Safari 和 Chrome */
+    -o-transform: rotate(-90deg) translate(235px, -100%);
+    /* Opera */
+}
+
+.page .content .ruler .ruler-bot .scale li {
+    width: 8px;
+    height: 1px;
+    margin-bottom: 10px;
+    background: #3a3a3a;
+    position: relative;
+}
+
+.page .content .ruler .ruler-bot .scale li i {
+    font-size: 14px;
+    color: #333;
+    position: absolute;
+    left: 14px;
+    top: -5px;
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.page .content .ruler .ruler-bot .scale .long {
+    width: 15px;
+    background: #333;
+}
+
+.page .content .ruler .ruler-bot .scale .on {
+    background: #3279fe;
+}
+
+.page .content .ruler .ruler-bot .red-ruler {
+    position: absolute;
+    bottom: 12px;
+    right: 148px;
+    width: 30%;
+    height: 54px;
+    background: url("../img/red.jpg") no-repeat center;
+    background-size: 24%;
+}
+
+.page .content .ruler .ruler-bot span {
+    position: absolute;
+    top: -28px;
+    right: 50%;
+}
+
+.page .content .ruler span {
+    display: block;
+    font-size: 2.0rem;
+    line-height: 16px;
+    color: #3279fe;
+    padding-left: 6px;
+    padding-bottom: 12px;
+}
+
+.page .content .result {
+    padding: 5% 5% 0;
+    margin-top: -36px;
+}
+
+.page .content .result .result-wrap {
+    padding: 5.8%;
+    background: #e6e6e6;
+}
+
+.page .content .result .result-wrap h2 {
+    font-size: 1.6rem;
+    /* line-height: 5rem; */
+    color: #333;
+}
+
+.page .content .result .result-wrap .fore01 h2 span {
+    color: #3279fe;
+}
+
+.page .content .result .result-wrap .fore02 h2 span {
+    color: #58b431;
+}
+
+.page .content .result .result-wrap .fore03 h2 span {
+    color: #ff1500;
+}

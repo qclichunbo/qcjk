@@ -1,0 +1,413 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+.warpper {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-tap-high-light-color: rbga(0, 0, 0, 0);
+}
+
+
+/*内容*/
+
+ul,
+ol li {
+    list-style: none;
+}
+
+input,
+button,
+select,
+textarea {
+    outline: none;
+}
+
+a,
+button,
+input {
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+    text-decoration: none;
+}
+
+
+/*头部*/
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+    text-decoration: none;
+}
+
+
+/*内容*/
+
+.conner {
+    width: 100%;
+}
+
+.conner p {
+    height: 34px;
+    width: 100%;
+    font-size: 14px;
+    padding-left: 15px;
+    color: #333;
+    background: #ebebeb;
+    line-height: 34px;
+}
+
+
+/*选项*/
+
+.choice-box {
+    width: 100%;
+}
+
+.choice-box ul li {
+    height: 44px;
+    border-bottom: 1PX solid #e6e6e6;
+    line-height: 44px;
+    margin-left: 15px;
+}
+
+.choice-box ul li lable {
+    font-size: 15px;
+    color: #333;
+}
+
+.choice-box ul li b {
+    width: 61%;
+    height: 35px;
+    font-weight: normal;
+    display: block;
+    text-align: right;
+    float: right;
+    margin-right: 16px;
+    color: rgb(128, 128, 128);
+}
+
+.choice-box em {
+    float: right;
+    margin-right: 13px;
+}
+
+.choice-box ul li span {
+    background: url(../img/hui.png) no-repeat right;
+    float: right;
+    width: 13px;
+    height: 38px;
+    background-size: 78%;
+    margin-right: 4%;
+}
+
+.choice-box ul li input {
+    float: right;
+    line-height: 2;
+    margin-top: 2%;
+    width: 10%;
+    margin-right: 3%;
+    border: none;
+    color: #808080;
+    font-size: 15px;
+    outline: none;
+}
+
+.choice-box button {
+    width: 80%;
+    height: 50px;
+    background: #ea5042;
+    border: none;
+    margin-top: 30px;
+    border-radius: 24px;
+    margin-left: 10%;
+    color: #FFF;
+    font-size: 16px;
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+
+/*换算后内容*/
+
+.bottom-box {
+    width: 100%;
+    background: #ebebeb;
+    display: none;
+}
+
+#below-box {
+    width: 100%;
+    margin-top: 15px;
+    background: #fff;
+}
+
+.bottom-box p {
+    width: 100%;
+    height: 34px;
+    font-size: 14px;
+    padding-left: 10px;
+    line-height: 34px;
+}
+
+
+/*列表*/
+
+.warpper section {
+    -webkit-box-flex: 1;
+    overflow-y: scroll;
+    margin-top: 10px;
+    width: 100%;
+    display: none;
+}
+
+.warpper section li {
+       width: 100%;
+    line-height: 42px;
+    border-bottom: 1px solid #e6e6e6;
+    padding-left: 15px;
+    list-style: none;
+}
+
+.warpper section li span {
+    color: #000;
+    text-align: center;
+    line-height: 42px;
+    display: block;
+    margin-right: 5%;
+    height: 42px;
+    float: right;
+    border-radius: 50%;
+}
+
+.dropload-up,
+.dropload-down {
+    height: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.dropload-up>div,
+.dropload-down>div {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    line-height: 50px;
+}
+
+.loading {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    border: 2px solid #666;
+    border-bottom-color: transparent;
+    vertical-align: middle;
+    margin-right: 6px;
+    -webkit-animation: rotate 0.75s linear infinite;
+    animation: rotate 0.75s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*蒙版内容*/
+
+.show {
+    display: block !important;
+}
+
+.mask-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    display: none;
+}
+
+.slide-selector {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 270px;
+    overflow: auto;
+    background: #fff;
+    transform: translate3d(0, 100%, 0);
+}
+
+.slide-wrapper {
+    position: relative;
+    height: 225px;
+    overflow: hidden;
+}
+
+.slide-options {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.slide-active {
+    transform: translate3d(0, 0, 0);
+}
+
+.slide-mask {
+    position: absolute;
+    z-index: 11002;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(#fff 0, rgba(245, 245, 245, 0) 52%, rgba(245, 245, 245, 0) 48%, #fff 100%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#fff), color-stop(0.52, rgba(245, 245, 245, 0)), color-stop(0.48, rgba(245, 245, 245, 0)), to(#fff));
+    background: -webkit-linear-gradient(#fff 0, rgba(245, 245, 245, 0) 52%, rgba(245, 245, 245, 0) 48%, #fff 100%);
+    background: -moz-linear-gradient(#fff 0, rgba(245, 245, 245, 0) 52%, rgba(245, 245, 245, 0) 48%, #fff 100%);
+}
+
+.slide-header {
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    position: relative;
+    background: #292b37;
+    z-index: 1;
+}
+
+.slide-sure,
+.slide-cancel {
+    position: absolute;
+    top: 0;
+    padding: 8px;
+    margin: 5px;
+    font-size: 15px;
+    line-height: 1;
+    z-index: 1;
+}
+
+.slide-sure {
+    right: 0;
+    color: #fff;
+}
+
+.slide-cancel {
+    left: 0;
+    color: #808080;
+}
+
+.slide-option {
+    height: 45px;
+    line-height: 45px;
+    text-indent: .8rem;
+}
+
+.green {
+    background: #58B431;
+}
+
+.red {
+    background: #EA5042;
+}
+
+.blue {
+    background: #0bcbf2;
+}
+/*轮播图*/
+    
+    .swiper-container {
+        width: 100%;
+        height: 70px;
+        margin-top: 12px;
+    }
+    
+    .swiper-wrapper {
+        position: relative;
+    }
+    
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    
+    .swiper-slide img {
+        width: 100%;
+        height: 70px;
+        border-radius: 8px;
+    }
+    
+    .swiper-slide span {
+        text-align: center;
+        font-size: 16px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        width: 100%;
+        padding-top: 26%;
+        padding-left: 5%;
+        padding-right: 5%;
+        display: block;
+        border-radius: 8px;
+        height: 70px;
+        position: absolute;
+        left: 0;
+        color: #fff;
+        opacity: 0.8;
+        background: #000;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        top: 0;
+        word-wrap: break-word;
+    }

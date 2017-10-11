@@ -1,0 +1,25 @@
+﻿/* ============�����б�============== */
+
+div.newsclass{
+margin:0px;
+padding:10px 10px 10px 5px;
+}
+
+
+a.newsclass:link,a.newsclass:visited,a.newsclass:active{
+display:block;
+text-decoration: none;
+font:12px/26px Verdana,microsoft yahei,Arial, Helvetica, sans-serif;
+height:26px;
+text-align:left;
+background:url(../images/dot2.jpg) 0px 0px no-repeat;
+padding-left:13px;
+margin:0px;
+color:#505050;
+}
+
+a.newsclass:hover{
+display:block;
+color:#ff0000; 
+text-decoration: none;
+}

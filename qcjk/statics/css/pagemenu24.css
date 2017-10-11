@@ -1,0 +1,21 @@
+﻿div.pagemenu24{
+width:100%;
+margin:15px 0;
+}
+
+div.pagemenu24 a{
+display:block;
+width:180px;
+margin:0 auto;
+text-decoration: none;
+height:38px;
+font:12px/32px simsun,Verdana,Arial;
+text-align:center;
+background:url(../images/pagemenu24.png) 0px 0px no-repeat;
+color:#505050;
+}
+
+div.pagemenu24 a:hover{
+background:url(../images/pagemenu24_now.png) 0px 0px no-repeat;
+color:#fff;
+}

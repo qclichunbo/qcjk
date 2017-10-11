@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol li {
+    list-style: none;
+}
+
+a,
+button,
+input {
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+    text-decoration: none;
+}
+
+html,
+body,
+.warpper {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-tap-high-light-color: rbga(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+
+/*内容*/
+
+.conner {
+    width: 100%;
+}
+
+.nav {
+    width: 100%;
+    height: 124px;
+    background: #ebebeb;
+}
+
+.box-nav {
+    position: relative;
+}
+
+.nav input {
+    width: 90%;
+    height: 32px;
+    text-align: center;
+    margin-left: 5%;
+    color: #b3b3b3;
+    margin-top: 15px;
+    border: none;
+    line-height: 32px;
+    border-radius: 6px;
+    outline: none;
+}
+
+.nav #search {
+    width: 30px;
+    height: 73%;
+    position: absolute;
+    top: 42%;
+    left: 24%;
+    display: block;
+    background: url(../img/search.png) no-repeat;
+    background-size: 90%;
+}
+
+.nav p {
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #808080;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+
+/*指标*/
+
+#exponent {
+    padding-left: 5%;
+}
+
+#exponent dl {
+    float: left;
+    width: 30%;
+}
+
+#exponent dl dt {
+    margin-top: 10px;
+    float: left;
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+}
+
+#exponent dl dd {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+/*轮播图*/
+
+.swiper-container {
+    width: 100%;
+    height: 70px;
+    margin-top: 12px;
+}
+
+.swiper-wrapper {
+    position: relative;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 70px;
+    border-radius: 8px;
+}
+
+.swiper-slide span {
+    text-align: center;
+    font-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    padding-top: 26%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: block;
+    border-radius: 8px;
+    height: 70px;
+    position: absolute;
+    left: 0;
+    color: #fff;
+    opacity: 0.7;
+    background: #000;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    top: 0;
+    word-wrap: break-word;
+}
+
+
+/*列表*/
+
+.warpper section {
+    -webkit-box-flex: 1;
+    overflow-y: scroll;
+    margin-top: 10px;
+}
+
+.warpper section li {
+    width: 100%;
+    height: 44px;
+    line-height: 42px;
+    border-bottom: 1px solid #e6e6e6;
+    padding-left: 15px;
+    list-style: none;
+}
+
+.warpper section li span {
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 34px;
+    width: 34px;
+    display: block;
+    margin-right: 5%;
+    height: 34px;
+    float: right;
+    margin-top: 2%;
+    border-radius: 50%;
+}
+
+.dropload-up,
+.dropload-down {
+    height: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.dropload-up>div,
+.dropload-down>div {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    line-height: 50px;
+}
+
+.loading {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    border: 2px solid #666;
+    border-bottom-color: transparent;
+    vertical-align: middle;
+    margin-right: 6px;
+    -webkit-animation: rotate 0.75s linear infinite;
+    animation: rotate 0.75s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.green {
+    background: #58B431;
+}
+
+.red {
+    background: #EA5042;
+}
+
+.blue {
+    background: #0bcbf2;
+}

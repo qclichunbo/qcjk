@@ -1,0 +1,21 @@
+.homebtm{border-top:1px solid #e5ddd9; padding:25px 0; position:relative;}
+.homebtm li{ float:left; display:inline; width:98px;  position:relative;  text-align:center;}
+.homebtm li .pic{ display:block; height:78px; overflow:hidden;}
+.homebtm .ico-new{ position: absolute; top:0; right:5px;}
+.rss{ float:left; padding:1px 3px 1px 3px; }
+.homebtm{ position:relative; height:100px; width:995px;  font-size: 14px;}
+.mainCont{
+	width: 937px;
+	overflow: hidden;
+	position: absolute;
+	left: 32px;
+	top: 29px;
+}
+.mainCont ul{ word-wrap:normal; width:1200px;}
+.homebtm li{  width:104px; overflow:hidden;}
+.leftBtn{ float:left; padding-top:20px; }
+.leftBtn a{ background:url(../Images/crc_index_left_btn.png) no-repeat; width:21px; height:36px;color:#000; display:inline-block}
+.leftBtn a:hover{background:url(../Images/crc_index_left_btn_h.png) no-repeat;}
+.rightBtn{ float:right;padding-top:20px;}
+.rightBtn a{ background:url(../Images/crc_index_right_btn.png) no-repeat; width:21px; height:36px; display:inline-block}
+.rightBtn a:hover{background:url(../Images/crc_index_right_btn_h.png) no-repeat;}
